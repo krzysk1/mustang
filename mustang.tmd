@@ -59,7 +59,7 @@
                 <[tmvector3d][Direction][0.980581 0.0 -0.196116]>
                 <[string8][Tags][tail stabilizer]>				
             >
-			//mass: 3279.0 ( -0.046 0.000 -0.342 )
+			//mass: 3062.0 ( -0.003 0.000 -0.300 )
             <[rigidbody][Fuselage][]
                 <[float64][Mass][1900.0]>
                 <[tmvector3d][InertiaLength][5.0 1.0 1.0]>
