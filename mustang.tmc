@@ -1,10 +1,10 @@
 ﻿<[file][][]
     <[object][][]
         <[int][Version][210]>
-        <[vec32array][ContactSpheres][ ( -3.9442 0.0 -0.7951 0.16 ) ( 0.799 -1.859 -1.626  0.34 ) ( 0.799 1.859 -1.626  0.34 ) ]>
+        <[vec32array][ContactSpheres][ ( -3.945 0.0 -0.8155 0.169 ) ( 1.04 -1.796 -1.715  0.363 ) (  1.04 -1.796 -1.715  0.363 ) ]>
         <[string8][DisplayName][North American P-51 Mustang III]>
         <[string8][DescriptionTextEN][The North American Aviation P-51 Mustang was an American long-range, single-seat fighter and fighter-bomber used during World War II, the Korean War and other conflicts.
-		Made by Krzysztof Kaniewski. Original 3D model by Robert App.]>
+For Aerofly FS2 made by Krzysztof Kaniewski. Original 3D model by Robert App.]> // http://animium.com/2012/04/p-51-mustang-3d-model
 		<[float64][WingSpan][11.27]>
 		<[float64][Mass][3439]>
 		<[float64][MaximumSpeed][225.0]>
@@ -16,7 +16,7 @@
 		<[tmvector2d][FlapSpeedRange][ 37.5 200.0 ]>
         <[float64][MaximumAltitude][12800.0]>
         <[float64][CruiseAltitude] [4826.0]>
-        <[float64][QSpan][8.74]>
+        <[float64][QSpan][11.27]>
         <[float64][QMass][5490.0]>
         <[float64][QSpeed][191.5]>
         <[float64][QPower][(1280000.0]>
