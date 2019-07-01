@@ -428,8 +428,6 @@
                 <[float64][Speed][1.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.26]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoCoolerOutput][]
@@ -440,8 +438,6 @@
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.4]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoLeftAileronOutput][]
@@ -452,8 +448,6 @@
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.4]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoRightAileronOutput][]
@@ -464,8 +458,6 @@
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.8]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoLeftElevatorOutput][]
@@ -476,8 +468,6 @@
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.8]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoRightElevatorOutput][]
@@ -488,8 +478,6 @@
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.9]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoRudderOutput][]
@@ -500,8 +488,6 @@
                 <[float64][Speed][2.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][-0.68]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoRudder2Output][]
@@ -512,8 +498,6 @@
                 <[float64][Speed][0.2]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.6]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoLeftFlapOutput][]
@@ -524,8 +508,6 @@
                 <[float64][Speed][0.2]>
                 <[float64][P0][0.0]>
                 <[float64][P1][0.6]>
-                <[float64][P2][0.0]>
-                <[float64][P3][0.0]>
                 <[float64][Position][0.0]>
             >
             <[output_free][ServoRightFlapOutput][]
@@ -689,7 +671,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.40]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.20]>
                 <[float64][Cd0Base][0.005]>
@@ -709,7 +691,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.40]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.20]>
                 <[float64][Cd0Base][0.005]>
@@ -729,7 +711,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.40]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.5]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.20]>
                 <[float64][Cd0Base][0.005]>
@@ -749,7 +731,7 @@
                 <[float64][ClAlpha][6.28]>
                 <[float64][CdAlpha][0.40]>
                 <[float64][CmAlpha][0.0]>
-                <[float64][ClFlap][1.5]>
+                <[float64][ClFlap][2.1]>
                 <[float64][CdFlap][0.0]>
                 <[float64][CmFlap][-0.20]>
                 <[float64][Cd0Base][0.005]>
