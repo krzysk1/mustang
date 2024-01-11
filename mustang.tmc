@@ -4,18 +4,18 @@
         <[vec32array][ContactSpheres][ ( 1.047 -1.796 -1.715 0.363 ) (  1.047 1.796 -1.715 0.363 ) ( -3.945 0.0 -0.816 0.169 ) ]>
         <[string8][ICAO][P51]>
         <[string8][DisplayName][North American Mustang III]>
-        <[string8][DisplayNameFull][North American P-51 Mustang III]>
+        <[string8][DisplayNameFull][North American P51C MUSTANG Mk.III]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
-                <[string8][Text][The North American Aviation P-51 Mustang was an American long-range, single-seat fighter and fighter-bomber used during World War II, the Korean War and other conflicts. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model by Robert App.]>
+                <[string8][Text][The prototype of the North American P-51 Mustang first flew on 26 October 1940 in response to a British request for a fighter suitable for use in the European theatre. The first Mustang Mk.I’s arrived in England in November 1941 and early combat experience showed the speed and altitude limitations of the original American designed Allison engine. Mustangs powered by the Rolls-Royce Merlin 61, built by Packard in the United States as the V-1650, were designated P-51B/C by the USAAF and known as the Mustang Mk.III by the Royal Air Force. For Aerofly FS4 made by Krzysztof Kaniewski. Original 3D model by Robert App.]>
             >
             <[localized_text][][]
                 <[string8][Language][de]>
-                <[string8][Text][Die North American Aviation P-51 Mustang war ein amerikanisches Langstrecken-Einsitzjagdflugzeug und Jagdbomber, das im Zweiten Weltkrieg, im Koreakrieg und in anderen Konflikten eingesetzt wurde. Für Aerofly FS4 erstellt von Krzysztof Kaniewski. Ursprüngliches 3D-Modell von Robert App.]>
+                <[string8][Text][Der Jungfernflug des Prototyps der North American P-51 Mustang fand am 26. Oktober 1940 in Antwort auf eine britische Anfrage nach einem für die europäischen Kriegsschauplätze geeigneten Jagdflugzeug statt. Die ersten Mustang Mk.I trafen im November 1941 in England ein. Frühe Kampferfahrungen zeigten eingeschränkte Geschwindigkeits- und Höhenleistungen des ursprünglichen amerikanischen Allison-Motors. Mustangs, die mit dem Rolls-Royce Merlin 61-Motor ausgerüstet wurden, der von Packard in den USA auf Lizenz als V-1650 hergestellt wurde, trugen bei der USAAF die Bezeichnung P-51B/C und waren bei der Royal Air Force als Mustang Mk.III bekannt. Für Aerofly FS4 erstellt von Krzysztof Kaniewski. Ursprüngliches 3D-Modell von Robert App.]>
             >
         >
-		<[float64][WingSpan][11.27]>
+		<[float64][WingSpan][11.29]>
 		<[float64][MaximumAirspeed][225.0]>
 		<[float64][MaximumSpeed][225.0]>
 		<[float64][MinimumAirspeed][37.5]>
