@@ -3,7 +3,7 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ ( 1.047 -1.796 -1.715 0.363 ) (  1.047 1.796 -1.715 0.363 ) ( -3.945 0.0 -0.816 0.169 ) ]>
         <[string8][ICAO][P51]>
-        <[string8][DisplayName][North American Mustang III]>
+        <[string8][DisplayName][MUSTANG Mk.III]>
         <[string8][DisplayNameFull][North American P51C MUSTANG Mk.III]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]

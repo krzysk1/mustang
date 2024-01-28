@@ -1,11 +1,11 @@
 <[file][][]
 
-	//-------------------------------------
-	// Plane: P51 Mustang c mar. 23, 2011
-	// Compilation: Krzysztof Kaniewski
-	// 3D Design: Robert App  http://animium.com/2012/04/p-51-mustang-3d-model
-	// Date: Thu Aug 07 2014; July 2019; Aug 2020; Jan 2023; May 2023; Dec 2023
-	//-------------------------------------
+    //-------------------------------------
+    // Plane: P51 Mustang c mar. 23, 2011
+    // Compilation: Krzysztof Kaniewski
+    // 3D Design: Robert App  http://animium.com/2012/04/p-51-mustang-3d-model
+    // Date: Thu Aug 07 2014; July 2019; Aug 2020; Jan 2023; May 2023; Dec 2023
+    //-------------------------------------
 
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
@@ -113,8 +113,8 @@
                 <[float64][D][849.7]>
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.40]>
-            >			
-			// propulsion
+            >
+            // propulsion
             <[rigidbody][PropellerBody][]
                 <[float64][Mass][40.0]>
                 <[tmvector3d][InertiaLength][ 0.2 2.5 0.2 ]>
@@ -125,7 +125,7 @@
                 <[string8][Body][Fuselage]>
                 <[string8][Geometry][PropDisk]>
                 <[string8][DamageOnCrash][Propeller.Damage]>
-            >			
+            >
             <[jointtorque][DriveShaft][]
                 <[string8][Body0][Fuselage]>
                 <[string8][Body1][PropellerBody]>
@@ -174,13 +174,20 @@
                 <[string8][AddTorque][DriveShaft.AddTorque]>
                 <[string8][AddInertia][DriveShaft.AddInertia]>
                 <[float64][RotationInertia][1.1776]>
-                <[float64][ThrottleIdle][0.10]>
-                <[float64][Friction][77.0]>
+                <[float64][ThrottleIdle][0.2]>
+                <[float64][Friction][57.0]>
                 <[float64][RatedRotationSpeed][283.1]>
                 <[float64][RatedPower][1565970.0]>
-                <[float64][Displacement][0.0459]>
+                <[float64][Displacement][0.02704]>
             >
-		
+            <[product][NormalizedPropellerSpeed][]
+                <[string8][Inputs][ DriveShaft.RotationSpeed 0.0035323 ]>
+            >
+            <[sender][SenderPower][]
+                <[string8][Input][NormalizedPropellerSpeed.Output]>
+                <[string8][Message][Aircraft.Power]>
+            >
+
             // left gear
             <[rigidbody][LeftGear][]
                 <[float64][Mass][70.0]>
@@ -222,7 +229,7 @@
                 <[string8][Body][LeftGear2]>
                 <[tmvector3d][R0][1.047 1.796 -1.715]>
                 <[string8][InputBrake][LeftBrakeInput.Output]>
-            	<[float64][BrakeStrength][0.5]>
+                <[float64][BrakeStrength][0.5]>
             >
             <[output][GroundRollSpeedLeft][]
                 <[string8][Input][LeftWheelHull.Speed]>
@@ -241,7 +248,7 @@
             <[multibody_joint][JointRightWingRightGear][]
                 <[string8][Body0][RightWing]>
                 <[string8][Body1][RightGear]>
-                <[tmvector3d][X0][0.9759 0.18 0.1866]> 
+                <[tmvector3d][X0][0.9759 0.18 0.1866]>
                 <[tmvector3d][R0][0.4925 -1.7835 -0.5945]> 0
                 <[uint32][Type][0]>
                 <[string8][InputLock][1.0]>
@@ -272,7 +279,7 @@
                 <[string8][Body][RightGear2]>
                 <[tmvector3d][R0][1.047 -1.796 -1.715]>
                 <[string8][InputBrake][RightBrakeInput.Output]>
-            	<[float64][BrakeStrength][0.5]>
+                <[float64][BrakeStrength][0.5]>
             >
             <[output][GroundRollSpeedRight][]
                 <[string8][Input][RightWheelHull.Speed]>
@@ -285,7 +292,7 @@
             <[rigidbody][TailGearUpper][]
                 <[float64][Mass][8]>
                 <[tmvector3d][InertiaLength][0.28 0.10 0.275]>
-                <[tmvector3d][R0][-3.90292 0.000500	-0.29048]>
+                <[tmvector3d][R0][-3.90292 0.000500    -0.29048]>
                 <[tmmatrix3d][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0]>
             >
             <[multibody_joint][JointTailGearUpperFuselage][]
@@ -353,11 +360,43 @@
                 <[string8][Message][Controls.Yaw.Input]>
                 <[tmvector2d][Range][-1.0 1.0]>
             >
+			
             <[input_lever][FlapsInput][]
                 <[string8][Message][Controls.Flaps]>
                 <[tmvector2d][Range][ 0.0 1.0 ]>
                 <[uint][Positions][3]>
                 <[float64][Value][0.0]>
+            >
+            <[gated_lever][FlapLever][]
+                <[string8][Input][FlapsInput.Output]>
+                <[float64][Gates][ 0.0 0.5 1.0 ]>
+                <[float64][CommandMoveAcceleration][20.0]>
+                <[float64][CommandMoveStrength]    [8.0]>
+            >
+            <[output_free][FlapLeverOutput][]
+                <[string8][Input][FlapLever.Output]>
+            >
+            <[event_sound][FlapLeverPullSound][]
+            >
+            <[event_sound][FlapLeverReleaseSound][]
+            >
+            <[linear_interpolation][FlapsMapping][]
+                <[string8][Input][FlapsInput.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.6) ]>
+            >
+            <[sender][SenderFlapPosition][]
+                <[string8][Input][FlapsMapping.Output]>
+                <[string8][Message][Aircraft.Flaps]>
+            >
+            <[sender][SenderFlapSetting][]
+                <[string8][Input][FlapsInput.Output]>
+                <[string8][Qualifiers][setting]>
+                <[string8][Message][Aircraft.Flaps]>
+            >
+            <[sender][SenderFlapMaximum][]
+                <[string8][Input][0.6]>
+                <[string8][Message][Aircraft.Flaps]>
+                <[string8][Qualifiers][maximum]>
             >
             <[input_default][LeftBrakeInput][]
                 <[string8][Message][Controls.WheelBrake.Left]>
@@ -366,13 +405,28 @@
                 <[string8][Message][Controls.WheelBrake.Right]>
             >
             <[input_binary][GearInput][]
-            	<[string8][Message][Controls.Gear]>
-            	<[float64][Value][1.0]>
+                <[string8][Message][Controls.Gear]>
+                <[float64][Value][1.0]>
             >
             <[input_default][ElevatorTrimInput][]
                 <[string8][Message][Controls.Trim]>
-                <[tmvector2d][Range][-1.0 1.0]>
+                <[uint][Positions][201]>
+                <[tmvector2d][Range][ -1.0 1.0 ]>
+                <[float64][Value][0.0]>
+                <[float64][Speed][0.15]>
             >
+            <[sender][SenderTrim][]
+                <[string8][Input][ElevatorTrimInput.Output]>
+                <[string8][Message][Aircraft.Trim]>
+            >	
+            <[output_free][ElevatorTrimInputOutput][]
+                <[string8][Input][ElevatorTrimInput.Output]>
+            >
+            <[sender][SenderPitchTrimPosition][]
+                <[string8][Input][ElevatorTrimInput.Output]>
+                <[string8][Message][Aircraft.PitchTrim]>
+                <[string8][Qualifiers][ normalized ]>
+            >			
             <[input_default][AileronTrimInput][]
                 <[string8][Message][Controls.AileronTrim]>
                  <[tmvector2d][Range][-1.0 1.0]>
@@ -618,7 +672,7 @@
             <[output_free][ServoTailLidsOutput][]
                 <[string8][Input][ServoTailLids.Output]>
             >
-            
+
             // aerodynamics
             <[aerofuselage][FuselageAero][]
                 <[string8][Body][Fuselage]>
@@ -1203,10 +1257,10 @@
                 <[uint32][InputID][UniversalTime.Output]>
             >
             <[graphics_flasher][BeaconRotation][]
-            	<[string8][Function][Triangle]>
+                <[string8][Function][Triangle]>
                 <[string8][InputTime][UniversalTime.Output]>
-            	<[float64][Period][18.493]>
-            	<[float64][Minimum][0.0]>
+                <[float64][Period][18.493]>
+                <[float64][Minimum][0.0]>
                 <[float64][Maximum][1.0]>
             >
             <[graphics_linear_interpolation][PilotMapping_90][]
@@ -1344,7 +1398,7 @@
                 <[string8][InputModulation][NavigationLightOn.Output]>
                 <[string8][InputTransform][Rudder.Output]>
             >
-    	>
+        >
         <[pointer_list_tmsound][SoundObjects][]
             // wind
             <[soundinput][Airspeed][]

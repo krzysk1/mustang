@@ -1,10 +1,10 @@
 <[file][][]
     <[hints][][]
-        // Messerschmitt Bf 109
-        <[float64][MaximumTakeOffMass][2505.0]>
-        <[float64][WingSpan][9.87]>
-        <[float64][WingArea][16.05]>
-        <[float64][HeightOffset][-1.50622]>
+        // North American Mustang III]
+        <[float64][MaximumTakeOffMass][5490.0]>
+        <[float64][WingSpan][11.29]>
+        <[float64][WingArea][21.8]>
+        <[float64][HeightOffset][-1.715]>
         <[float64][ApproachSpeed][48.8]>
         <[float64][PatternSpeed][61.1]>
         <[float64][InitialClimbSpeed][67.1]>
