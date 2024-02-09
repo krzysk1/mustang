@@ -3,8 +3,8 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ ( 1.047 -1.796 -1.715 0.363 ) (  1.047 1.796 -1.715 0.363 ) ( -3.945 0.0 -0.816 0.169 ) ]>
         <[string8][ICAO][P51]>
-        <[string8][DisplayName][MUSTANG Mk.III]>
-        <[string8][DisplayNameFull][North American P51C MUSTANG Mk.III]>
+        <[string8][DisplayName][Mustang Mk.III]>
+        <[string8][DisplayNameFull][North American P51C Mustang Mk.III]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
@@ -36,6 +36,6 @@
         <[tmvector2d][FlapSettings][ (0.0 0.0) (0.5 0.5) (1.0 1.0) ]>
         <[string8][FlapQualifier][Normalized]>
         <[string8][Tags][ airplane fighter historical military piston flaps retractable_gear tailgear ]>
-		<[string8][Pilot][]>
+        <[string8][Pilot][pilot_peter]>
     >
 >
