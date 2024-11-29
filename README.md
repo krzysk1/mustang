@@ -1,6 +1,8 @@
 # mustang
 North American P-51 Mustang III  for  Aerofly FS4
 
+**THE MODEL HAS NO FUNCTIONAL COCKPIT AND NO DEVELOPMENT IS PLANNED**
+
 The prototype of the North American P-51 Mustang first flew on 26 October 1940 in response to a British request for a fighter suitable for use in the European theatre. The first Mustang Mk.I’s arrived in England in November 1941 and early combat experience showed the speed and altitude limitations of the original American designed Allison engine. Mustangs powered by the Rolls-Royce Merlin 61, built by Packard in the United States as the V-1650, were designated P-51B/C by the USAAF and known as the Mustang Mk.III by the Royal Air Force. Entering service with No.19 Squadron in February 1944 the first version of the Merlin powered Mustang flew with a total of nineteen RAF squadrons on long range escort and fighter-bomber missions. Many aircraft were modified with the blown Perspex rear sliding “Malcolm Hood” in place of the original heavily framed hinged canopy giving outstanding all round visibility for the pilot. The Mustang Mk.III was armed with four 12.7 mm (0.5 in.) Browning machine guns in the wings and could also carry two 225kg (500 lb) bombs in place of the wing mounted drop tanks. Total P-51 production was over 15,500 ofwhich the P-51B/C version totalled 3,738 aircraft, 910 of these being RAF Mustang IIIs. The Mustang Mk.III was powered by a 1520hp V-1650 (Merlin 61) giving a maximum speed of 711km/h (442mph) and an operational radius of 1529km (950miles). Maximum altitude was 12,950m (42,500ft.) Wing span:11.29m (37ft 1in.) Length: 9.83m (32ft 3in.) Height 4.17m (13ft8in.)
 
 
