@@ -52,7 +52,7 @@
                 <[tmvector3d][Direction][0.980581 0.0 -0.196116]>
                 <[string8][Tags][tail stabilizer]>
             >
-            // rigidbodies
+            // rigidbodies mass: 3134.0  cm=(0.118 0.000 -0.291)
             <[rigidbody][Fuselage][]
                 <[float64][Mass][1900.0]>
                 <[tmvector3d][InertiaLength][5.0 1.0 1.0]>
@@ -114,9 +114,9 @@
                 <[float64][StaticFrictionCoefficient][1.0]>
                 <[float64][KineticFrictionCoefficient][0.40]>
             >
-            // propulsion
+            // propulsion Hamilton Standard 11'2" 4-blade
             <[rigidbody][PropellerBody][]
-                <[float64][Mass][40.0]>
+                <[float64][Mass][120.0]>
                 <[tmvector3d][InertiaLength][ 0.2 2.5 0.2 ]>
                 <[tmvector3d][R0][3.071 0.0 0.011]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0]>
@@ -168,16 +168,18 @@
             <[output][RotationSpeed][]
                 <[string8][Input][DriveShaft.GetRotationSpeed]>
             >
+			// Powerplant: 1 × Packard (Rolls-Royce) V-1650-7 Merlin 12-cylinder liquid cooled engine, 
+			// 1,490 hp (1,110 kW) at 3,000 rpm;[159] 1,720 hp (1,280 kW) at WEP
             <[engine][Engine][]
                 <[string8][ThrottleControl][ServoThrottle.Output]>
-                <[string8][RotationSpeed][DriveShaft.RotationSpeed]>
+                <[string8][RotationSpeed][DriveShaft.GetRotationSpeed]>
                 <[string8][AddTorque][DriveShaft.AddTorque]>
                 <[string8][AddInertia][DriveShaft.AddInertia]>
                 <[float64][RotationInertia][1.1776]>
-                <[float64][ThrottleIdle][0.2]>
-                <[float64][Friction][57.0]>
+                <[float64][ThrottleIdle][0.55]>
+                <[float64][Friction][70.0]>
                 <[float64][RatedRotationSpeed][283.1]>
-                <[float64][RatedPower][1565970.0]>
+                <[float64][RatedPower][1280000.0]>
                 <[float64][Displacement][0.02704]>
             >
             <[product][NormalizedPropellerSpeed][]
@@ -360,7 +362,7 @@
                 <[string8][Message][Controls.Yaw.Input]>
                 <[tmvector2d][Range][-1.0 1.0]>
             >
-			
+
             <[input_lever][FlapsInput][]
                 <[string8][Message][Controls.Flaps]>
                 <[tmvector2d][Range][ 0.0 1.0 ]>
@@ -418,7 +420,7 @@
             <[sender][SenderTrim][]
                 <[string8][Input][ElevatorTrimInput.Output]>
                 <[string8][Message][Aircraft.Trim]>
-            >	
+            >
             <[output_free][ElevatorTrimInputOutput][]
                 <[string8][Input][ElevatorTrimInput.Output]>
             >
@@ -426,7 +428,7 @@
                 <[string8][Input][ElevatorTrimInput.Output]>
                 <[string8][Message][Aircraft.PitchTrim]>
                 <[string8][Qualifiers][ normalized ]>
-            >			
+            >
             <[input_default][AileronTrimInput][]
                 <[string8][Message][Controls.AileronTrim]>
                  <[tmvector2d][Range][-1.0 1.0]>
@@ -1252,8 +1254,8 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][AngleID][Propeller.RotationAngle]>
-                <[tmvector3d][Axis][0.99904 0.0 -0.02192]>
-                <[tmvector3d][Pivot][3.2134 0.0 -0.0052]>
+                <[tmvector3d][Axis][ 0.999963	-0.000647	-0.008625]>
+                <[tmvector3d][Pivot][3.397 -0.0001190 -0.006810]>
             >
             <[graphics_propeller_blade][PropellerBlade][]
                 <[string8][GeometryList][ Prop ]>
@@ -1275,7 +1277,7 @@
                 <[uint32][RotationSpeedID][Propeller.RotationSpeed]>
                 <[uint32][DamageID][Propeller.Damaged]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
-                <[tmvector3d][Pivot][3.2134 0.0 -0.0052]>
+                <[tmvector3d][Pivot][3.2134 0.0 -0.0052]> 
                 <[uint32][BladeNumber][4]>
                 <[float64][Radius][1.6705]>
                 <[float64][BladePitch][-0.5]>
@@ -1413,7 +1415,7 @@
             <[graphics_input][StickBaseTransformInput][]
                 <[uint32][InputID][ServoElevator.Output]>
                 <[float64][Scaling][0.666]>
-            >			
+            >
             <[graphics_rotation][StickHandPitchTransform][]
                 <[string8][Input][StickBaseTransformInput.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
@@ -1423,7 +1425,7 @@
             <[graphics_input][StickRollTransformInput][]
                 <[uint32][InputID][ServoLeftAileron.Output]>
                 <[float64][Scaling][0.333]>
-            >			
+            >
             <[graphics_rotation][StickTransformation][]
                 <[string8][Input][StickRollTransformInput.Output]>
                 <[tmvector3d][Axis][1.0 0.0 0.0]>
@@ -3514,11 +3516,11 @@
             >
             <[soundmapping][RPMPitchIdle][]
                 <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (41.88 0.66) (62.82 0.98) (251.58 3.0) ]>
+                <[tmvector2d][Map][ (51.88 0.66) (72.82 0.98) (251.58 3.0) ]>
             >
             <[soundmapping][RPMPitchRun][]
                 <[string8][Input][RotationSpeed.Output]>
-                <[tmvector2d][Map][ (41.88 0.3) (230.36 1.0) (460.0 2.5) ]>
+                <[tmvector2d][Map][ (51.88 0.3) (230.36 1.0) (460.0 2.5) ]>
             >
             <[soundmapping][RPMVolumeIdle][]
                 <[string8][Input][RotationSpeed.Output]>

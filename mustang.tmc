@@ -1,7 +1,7 @@
 <[file][][]
     <[modelinformation][][]
         <[int32][Version][220]>
-        <[list_vector4_float64][ContactSpheres][ ( 1.047 -1.796 -1.715 0.363 ) (  1.047 1.796 -1.715 0.363 ) ( -3.945 0.0 -0.816 0.169 ) ]>
+        <[list_vector4_float64][ContactSpheres][ (1.047 -1.796 -1.715 0.363) (1.047 1.796 -1.715 0.363) (-3.945 0.0 -0.816 0.169) ]>
         <[stringt8c][ICAO][P51]>
         <[string8][DisplayName][Mustang Mk.III]>
         <[string8][DisplayNameFull][North American P51C Mustang Mk.III]>
@@ -19,24 +19,24 @@
                 <[string8][Text][Prototyp północnoamerykańskiego samolotu P-51 Mustang został po raz pierwszy oblatany 26 października 1940 r. w odpowiedzi na brytyjskie zapotrzebowanie na myśliwiec nadający się do użycia w teatrze europejskim. Pierwsze Mustangi Mk.I przybyły do Anglii w listopadzie 1941 roku, a wczesne doświadczenia bojowe pokazały ograniczenia prędkości i wysokości oryginalnego amerykańskiego silnika Allison. Mustangi napędzane silnikiem Rolls-Royce Merlin 61, zbudowanym przez Packard w Stanach Zjednoczonych jako V-1650, zostały oznaczone jako P-51B/C przez USAAF i znane jako Mustang Mk.III przez Royal Air Force. Dla Aerofly FS4 wykonany przez Krzysztofa Kaniewskiego. Oryginalny model 3D autorstwa Roberta App.]>
             >
         >
-        <[float64][WingSpan][11.29]>
-        <[float64][MaximumAirspeed][225.0]>
-        <[float64][MaximumSpeed][225.0]>
-        <[float64][MinimumAirspeed][37.5]>
-        <[float64][ApproachAirspeed][33.3]>
-        <[float64][CruiseAirspeed][157.5]>
-        <[float64][CruiseSpeed][157.5]>
-        <[float64][MaximumAltitude][12800.0]>
-        <[float64][CruiseAltitude][4826.0]>
         <[float64][MaximumTakeoffMass][5490.0]>
-        <[float64][EnginePower][1280000.0]>
-        <[float64][MaximumRange][2656000.0]>
-        <[uint32][UnitsBuilt][15588]>
-        <[uint32][EngineCount][1]>
-        <[uint32][Year][1940]>
-        <[vector2_float64][NormalAirspeedRange][ 37.5 150.0 ]>
+        <[float64][WingSpan]          [11.29]>
+        <[uint32] [Year]              [1940]>
+        <[uint32] [UnitsBuilt]        [15588]>
+        <[uint32] [EngineCount]       [1]>
+        <[float64][EnginePower]       [1280000.0]>
+        <[float64][MaximumAirspeed]   [225.0]>
+        <[float64][MaximumSpeed]      [225.0]>
+        <[float64][MinimumAirspeed]   [37.5]>
+        <[float64][ApproachAirspeed]  [43.3]>
+        <[float64][CruiseAirspeed]    [157.5]>
+        <[float64][CruiseSpeed]       [157.5]>
+        <[float64][MaximumAltitude]   [12800.0]>
+        <[float64][CruiseAltitude]    [4826.0]>
+        <[float64][MaximumRange]      [2656000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [ 37.5  200.0 ]>
+        <[vector2_float64][NormalAirspeedRange] [ 37.5  150.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 150.0 252.5 ]>
-        <[vector2_float64][FlapAirspeedRange][ 37.5 200.0 ]>
         <[list_vector2_float64][FlapSettings][ (0.0 0.0) (0.5 0.5) (1.0 1.0) ]>
         <[string8][FlapQualifier][Normalized]>
         <[string8][Tags][ airplane fighter historical military piston flaps retractable_gear tailgear ]>
